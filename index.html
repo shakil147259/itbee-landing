@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tabler-icons/1.35.0/iconfont/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <title>Timer & Stopwatch Widget</title>
+  </head>
+
+  <body
+    class="bg-contain bg-no-repeat bg-center bg-[url('img/bg.png')] text-white flex items-center justify-center min-h-screen relative overflow-hidden"
+  >
+    <!-- Container -->
+    <div class="flex flex-row items-center z-10 gap-10">
+      <!-- Title -->
+      <div class="text-left">
+        <h1 class="text-6xl font-bold">
+          Timer<span class="text-gray-400 opacity-50">&</span>
+        </h1>
+        <h1 class="text-6xl font-bold">Stopwatch</h1>
+        <h1 class="text-6xl font-bold">Widget</h1>
+        <h2 class="text-5xl font-semibold text-gray-400 opacity-50">
+          with Variables
+        </h2>
+        <p class="text-lg mt-4">for iOS in Figma + Tutorials</p>
+        <div class="flex flex-row items-center gap-3 mt-24">
+          <img src="./img/avatar1.png" alt="avatar" class="w-10 h-10 rounded" />
+          <p class="font-semibold text-2xl">Way Of Mani</p>
+        </div>
+      </div>
+
+      <!-- Widgets -->
+      <div class="flex flex-col mt-16">
+        <!-- Timer Widget -->
+        <div
+          class="text-center transform rotate-[5deg] translate-x-[-20px] -translate-y-6"
+        >
+          <div
+            class="flex bg-black bg-opacity-60 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg gap-2"
+          >
+            <div class="text-left">
+              <div class="text-8xl font-bold leading-none">
+                59<span class="text-3xl font-normal text-gray-400">sec</span>
+              </div>
+              <div class="text-8xl font-bold leading-none mt-2">
+                2<span class="text-3xl font-normal text-gray-400">min</span>
+              </div>
+            </div>
+            <div>
+              <div
+                class="flex w-[250px] flex-col bg-gray-800 rounded-xl p-3 gap-1"
+              >
+                <span
+                  class="bg-gray-800 text-white rounded-lg text-left text-[30px]"
+                >
+                  Timestamp
+                </span>
+                <div
+                  class="flex justify-between items-center rounded-md px-4 py-1 text-left bg-[#1F1F35] text-[20px]"
+                >
+                  <span class="">Click Here</span>
+                  <i class="ti ti-flag-filled"></i>
+                </div>
+              </div>
+              <div
+                class="flex justify-between my-2 items-center rounded-xl px-8 py-2 text-left bg-[#1F1F35] text-[25px] h-12"
+              >
+                <i class="ti ti-rewind-backward-15"></i>
+                <i class="ti ti-player-pause-filled"></i>
+                <i class="ti ti-rewind-forward-15"></i>
+              </div>
+            </div>
+          </div>
+          <span class="capitalize text-xl">timer widget</span>
+        </div>
+
+        <!-- Stopwatch Widget -->
+        <div
+          class="text-center transform rotate-[-8deg] translate-x-[30px] -translate-y-8"
+        >
+          <div
+            class="flex bg-black bg-opacity-60 backdrop-blur-md rounded-3xl p-6 text-center shadow-lg gap-2"
+          >
+            <div class="text-left">
+              <div class="text-8xl font-bold leading-none">
+                24<span class="text-3xl font-normal text-gray-400">sec</span>
+              </div>
+              <div class="text-8xl font-bold leading-none mt-2">
+                00<span class="text-3xl font-normal text-gray-400">min</span>
+              </div>
+            </div>
+
+            <div class="">
+              <div
+                class="flex w-[250px] flex-col bg-gray-800 rounded-xl p-3 gap-1"
+              >
+                <span
+                  class="flex flex-row bg-gray-800 text-white rounded-lg text-left text-[25px]"
+                >
+                  Target Time:
+                  <span class="ml-5"
+                    >1 <span class="text-gray-400 opacity-50">min</span></span
+                  >
+                </span>
+                <div
+                  class="flex justify-between items-center rounded-md px-4 py-1 text-left bg-[#1F1F35] text-[20px]"
+                >
+                  <span class="">Click Here</span>
+                  <i class="ti ti-flag-filled"></i>
+                </div>
+              </div>
+              <div
+                class="flex justify-between my-2 items-center rounded-xl px-8 py-2 text-left bg-[#1F1F35] text-[25px] h-12"
+              >
+                <i class="ti ti-rewind-backward-15"></i>
+                <i class="ti ti-player-pause-filled"></i>
+                <i class="ti ti-rewind-forward-15"></i>
+              </div>
+            </div>
+          </div>
+          <span class="capitalize text-xl m-2">stopwatch widget</span>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
